@@ -1,0 +1,24 @@
+<!--
+  Generated template for the StatusPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>status</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-item *ngFor="let item of items | async">
+      <pre >
+          {{item | json}}            
+      </pre>
+    <ion-label>{{item.key}} Light: {{item.light}}</ion-label>
+    <ion-toggle [(ngModel)]="item.status" disabled = "true" (ionChange)="notify(item.key , item.status)"></ion-toggle>
+  </ion-item>
+</ion-content>

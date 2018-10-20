@@ -1,0 +1,26 @@
+<!--
+  Generated template for the MenuPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title style="margin-left:27%">menu</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding center text-center>
+    <button ion-button color="dark" ion-button full (click)="GoToManual()">
+        เปิด-ปิดไฟ
+      </button>
+      <button ion-button color="dark" ion-button full (click)="GoToAuto()" style="margin-top:20px">
+        เปิด-ปิด อัตโนมัติ
+      </button>
+      <button ion-button color="dark" ion-button full (click)="GoToStatus()" style="margin-top:20px">
+        เช็คสถานะ
+      </button>
+</ion-content>

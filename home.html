@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title text-center>
+      Testing
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding center text-center>
+  <ion-label color="primary" stacked no-padding no-margin>Type your IP</ion-label>
+  <ion-item>
+    <ion-input type="tel"></ion-input>
+  </ion-item>
+  <button ion-button color="dark" (click)="GoToMenu()">
+    Next
+  </button>
+    <!-- <ion-item>
+        <ion-input [(ngModel)]="myInput"></ion-input>
+    </ion-item>
+    <button (click)="btnAddClicked()" ion-button>Add</button>
+  <ion-list>
+		<ion-item class="text" *ngFor="let item of items | async">
+    <pre>
+      {{item | json}}
+    </pre>
+      <button ion-button (click)="deleted()">Delete</button>
+		</ion-item>
+  </ion-list> -->
+</ion-content>
